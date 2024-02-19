@@ -24,9 +24,7 @@ library(data.table)
 library(furrr)
 library(ggplot2)
 library(patchwork)
-# library(devtools)
-# install_github("markus-schaffer/cramer.statistic")
-library(cramer.statistic)
+library(cramer)
 
 # Models
 library(ranger)
@@ -56,7 +54,6 @@ data_dt[, `:=`(
 walk(1:2, ~ data_dt[, paste0("demand_spms_lag_", .x) := shift(demand_spms, type = "lag", n = .x), by = customer_id])
 walk(1:2, ~ data_dt[, paste0("demand_spms_lead_", .x) := shift(demand_spms, type = "lead", n = .x), by = customer_id])
 
-data_dt[, demand_spms_area := NULL]
 data_dt <- na.omit(data_dt)
 data_lst <- split(data_dt, by = "customer_id")
 
@@ -74,7 +71,7 @@ fn_similarity <- function(data, pg) {
   # Cramer Test
   sample1 <- as.matrix(feature_dt[zero_water == TRUE, -"zero_water"])
   sample2 <- as.matrix(feature_dt[zero_water == FALSE, -"zero_water"])
-  result[, cramer_statistic := cramer_statistic(x = sample1, y = sample2)$statistic]
+  result[, cramer_statistic := cramer.test(x = sample1, y = sample2, just.statistic = T)$statistic]
 
   result[, colnames(data[1, .(customer_id, heat_meter_id, water_meter_id)]) := data[1, .(customer_id, heat_meter_id, water_meter_id)]]
   pg()
@@ -88,7 +85,7 @@ with_progress({
     .options = furrr_options(
       seed = 123,
       packages = c(
-        "Rcpp", "cramer.statistic", "data.table"
+        "Rcpp", "cramer", "data.table"
       ),
       chunk_size = 10L
     )

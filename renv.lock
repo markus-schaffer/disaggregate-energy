@@ -210,14 +210,15 @@
     },
     "cramer": {
       "Package": "cramer",
-      "Version": "0.9-3",
+      "Version": "0.9-4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
+        "Rcpp",
         "boot"
       ],
-      "Hash": "91b95d0faf6f597f7b52cf610acdd626"
+      "Hash": "7c6c88cf7ee671ccf8e5626b26a33206"
     },
     "cramer.statistic": {
       "Package": "cramer.statistic",
@@ -237,14 +238,14 @@
     },
     "data.table": {
       "Package": "data.table",
-      "Version": "1.14.10",
+      "Version": "1.15.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "methods"
       ],
-      "Hash": "6ea17a32294d8ca00455825ab0cf71b9"
+      "Hash": "cfbbb4aed6e78cd45f17123a9ec9981a"
     },
     "digest": {
       "Package": "digest",

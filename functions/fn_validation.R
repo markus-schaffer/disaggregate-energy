@@ -11,7 +11,7 @@ fn_similarity <- function(data) {
   sample2 <- as.matrix(feature_dt[zero_water == FALSE, -"zero_water"])
   # cramer_statistic <- cramer.test(x = sample1, y = sample2, just.statistic = TRUE)
   # result[, cramer_statistic := cramer_statistic$statistic]
-  result[, cramer_statistic := cramer_statistic(x = sample1, y = sample2)$statistic]
+  result[, cramer_statistic := cramer.test(x = sample1, y = sample2, just.statistic = T)$statistic]
   result[, colnames(data[1, .(house_nr)]) := data[1, .(house_nr)]]
   return(result)
 }
