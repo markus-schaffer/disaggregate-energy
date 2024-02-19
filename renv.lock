@@ -220,22 +220,6 @@
       ],
       "Hash": "7c6c88cf7ee671ccf8e5626b26a33206"
     },
-    "cramer.statistic": {
-      "Package": "cramer.statistic",
-      "Version": "0.0.0.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "cramer.statistic",
-      "RemoteUsername": "markus-schaffer",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "c494c768ee0b3ef33b7c223e870d2a19ea2884e1",
-      "Requirements": [
-        "Rcpp",
-        "cramer"
-      ],
-      "Hash": "427f951b77e9e3a3e2233cfc1c541958"
-    },
     "data.table": {
       "Package": "data.table",
       "Version": "1.15.0",

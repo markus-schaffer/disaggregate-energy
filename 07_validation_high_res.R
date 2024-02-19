@@ -23,7 +23,7 @@ library(purrr)
 library(data.table)
 library(ggplot2)
 library(patchwork)
-library(cramer.statistic)
+library(cramer)
 library(mgsub)
 
 # Models
