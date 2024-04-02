@@ -1,6 +1,6 @@
 # Title: Validate the Final Algorithm with the Low-Resolution Data
 #
-# Purpose: Loading low-resolution validation data (refer to [data](#data)) and
+# Purpose: Loading low-resolution validation data (refer to Data) and
 # conducting algorithm validation, this script produces figure 13 and provides
 # data for table 3.
 #
@@ -8,7 +8,6 @@
 #   - data/06_low_res_validation.csv
 #
 # Function files:
-#   - functions/fn_custom_cramer_statistic.R
 #   - functions/cvrmse_measure.R
 #   - functions/fn_validation.R
 #
