@@ -4,8 +4,6 @@ This repository includes the code, used for this publication:
 **M. Schaffer, J. Widén, J.E. Vera-Valdés, A. Marszal-Pomianowska, T.S. Larsen, Disaggregation of total energy use into space heating and domestic hot water: A city-scale suited approach, Energy. 291 (2024) 130351. https://doi.org/10.1016/j.energy.2024.130351.**
 
 If you use this code, please cite the above, mentioned publication. 
-## Indented aim
-
 ## Code Overview
 
 This GitHub repository contains the code used in the analysis and generation of figures for our scientific publication. The code is organized into several files, each serving specific purposes:
