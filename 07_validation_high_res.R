@@ -1,6 +1,6 @@
 # Title: Validate the Final Algorithm with the High-Resolution Data
 #
-# Purpose: Loading high-resolution validation data (refer to [data](#data)) and
+# Purpose: Loading high-resolution validation data (refer to Data) and
 # conducting algorithm validation, this script produces figures 14 and 15, along
 # with data for table 4.
 #
