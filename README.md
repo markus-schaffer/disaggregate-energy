@@ -24,7 +24,7 @@ The smart meter data used is described in this publication and can be accessed v
 
 M. Schaffer, M. Veit, A. Marszal-Pomianowska, M. Frandsen, M.Z. Pomianowski, E. Dichmann, C.G. Sørensen, J. Kragh, Dataset of smart heat and water meter data with accompanying building characteristics, Data Br. 52 (2024) 109964. https://doi.org/10.1016/j.dib.2023.109964.
 
-The weather data can be obtained from the Danish Meteorological Institute (DMI) via the following link: [`DMI Api`](https://confluence.govcloud.dk/display/FDAPI).
+The weather data can be obtained from the Danish Meteorological Institute (DMI) via the following link: [`DMI Api`](https://opendatadocs.dmi.govcloud.dk/en/Authentication).
 
 The validation data cannot be shared.
 The format of all data as expected by the code is described below. 
