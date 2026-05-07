@@ -1,0 +1,34 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated research article below."
+title: "Disaggregate Energy"
+version: "1.0.0"
+date-released: 2025-11-11
+url: "https://github.com/markus-schaffer/disaggregate-energy"
+authors:
+  - family-names: "Schaffer"
+    given-names: "Markus"
+    orcid: "https://orcid.org/0000-0003-3972-413X"
+preferred-citation:
+  type: article
+  title: "Disaggregation of total energy use into space heating and domestic hot water: A city-scale suited approach"
+  authors:
+    - family-names: "Schaffer"
+      given-names: "Markus"
+      orcid: "https://orcid.org/0000-0003-3972-413X"
+	- family-names: "Widén"
+      given-names: "Joakim"
+      orcid: "https://orcid.org/0000-0003-4887-9547"
+    - family-names: "Vera-Valdés"
+      given-names: "J. Eduardo"
+      orcid: "https://orcid.org/0000-0002-0337-8055"
+    - family-names: "Marszal-Pomianowska"
+      given-names: "Anna"
+      orcid: "https://orcid.org/0000-0002-3195-7388"
+	- family-names: "Larsen"
+      given-names: "Tine Steen"
+  journal: "Energy"
+  year: 2024
+  start: 130351
+  doi: "10.1016/j.energy.2024.130351"
+  url: "https://www.sciencedirect.com/science/article/pii/S0360544224001221"
